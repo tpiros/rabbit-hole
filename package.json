@@ -6,20 +6,11 @@
   "scripts": {
     "backend": "cd backend && npx trigger.dev@latest dev",
     "frontend": "cd frontend && npm run dev",
+    "install": "cd frontend & npm i & cd backend & npm i",
     "start": "npm run backend & npm run frontend"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "module",
-  "dependencies": {
-    "@google/genai": "^1.33.0",
-    "@trigger.dev/sdk": "^4.3.0",
-    "zod": "^4.1.13"
-  },
-  "devDependencies": {
-    "@trigger.dev/build": "^4.3.0",
-    "@types/node": "^25.0.1",
-    "tsx": "^4.21.0"
-  }
+  "type": "module"
 }
