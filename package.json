@@ -6,7 +6,7 @@
   "scripts": {
     "backend": "cd backend && npx trigger.dev@latest dev",
     "frontend": "cd frontend && npm run dev",
-    "install": "cd frontend & npm i & cd backend & npm i",
+    "install": "cd frontend && npm i && cd ../ && cd backend && npm i",
     "start": "npm run backend & npm run frontend"
   },
   "keywords": [],
