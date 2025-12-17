@@ -142,3 +142,4 @@ vite.config.ts.timestamp-*
 .DS_Store
 .claude/
 .trigger/
+gemini-updated.ts

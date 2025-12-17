@@ -34,9 +34,7 @@ Return your findings as JSON with this exact structure:
 
 For offramps, suggest specific, intriguing tangents - not generic categories.
 Bad: "Italian cuisine"
-Good: "Why Europeans feared tomatoes for 200 years"
-
-IMPORTANT: Return ONLY valid JSON, no markdown code blocks.`,
+Good: "Why Europeans feared tomatoes for 200 years"`,
       tools: [{ googleSearch: {} }],
     },
   });
@@ -88,7 +86,8 @@ ${journeyContext || 'Just starting'}
 Pick the most intriguing topic. Return as JSON: {"next": "chosen topic", "reasoning": "why"}`,
     config: {
       thinkingConfig: { thinkingBudget: 0 },
-      systemInstruction: `You are a ${personality}. Pick topics that create surprising connections or delightful contrasts with the journey so far. Return ONLY valid JSON, no markdown.`,
+      responseMimeType: 'application/json',
+      systemInstruction: `You are a ${personality}. Pick topics that create surprising connections or delightful contrasts with the journey so far.`,
     },
   });
 
